@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Adidas Home Page</title>
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+    </script>
+    <script src="../js/jquery-2.1.0.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            $(".mainMenu > li").hover(function () {
+                        //effect when the user hovers over the menu
+                        //first hide the menu item, since the CSS displays it - then slide it down.
+                        $(this).children("ul").fadeIn();
+
+                    },
+                    function () {
+                        //effect when the user leaves the current menu area - fade out
+                        $(this).children("ul").fadeOut();
+
+                    });
+        });
+
+    </script>
+</head>
+<body>
+<div class="wrapper">
+<header>
+    <img class="headerImage" src="images/logo.png">
+    <nav>
+        <ul class="mainMenu padding">
+            <li><a href="home.html" class="link padding">Home</a></li>
+            <li><a href="men.html"class="link padding">Men
+                <ul class="subMenu">
+                    <li><a href="">Coats &Jackets</a></li>
+                    <li><a href="">Shirts</a></li>
+                    <li><a href="">T Shirts and Polo</a></li>
+                    <li><a href="">Trousers</a></li>
+                    <li><a href="">Jeans</a></li>
+                    <li><a href="">Accessories</a></li>
+                    <li><a href="">Shoes</a></li>
+                    <li><a href="">Suits</a></li>
+                    <li><a href="">Designer Cloths</a></li>
+                </ul>
+                </a>
+            </li>
+            <li><a href="women.html"class="link padding">Women
+                <!--<ul class="sub-menu">-->
+                    <!--<li><a href="">Coats &Jackets</a></li>-->
+                    <!--<li><a href="">Shirts</a></li>-->
+                    <!--<li><a href="">T Shirts and Polo</a></li>-->
+                    <!--<li><a href="">Trousers</a></li>-->
+                    <!--<li><a href="">Jeans</a></li>-->
+                    <!--<li><a href="">Accessories</a></li>-->
+                    <!--<li><a href="">Shoes</a></li>-->
+                    <!--<li><a href="">Suits</a></li>-->
+                    <!--<li><a href="">Designer Cloths</a></li>-->
+                <!--</ul>-->
+            </a>
+            </li>
+            <li><a href="kids.html"class="link padding">Kids
+                <!--<ul class="sub-menu">-->
+                    <!--<li><a href="">Coats &Jackets</a></li>-->
+                    <!--<li><a href="">Shirts</a></li>-->
+                    <!--<li><a href="">T Shirts and Polo</a></li>-->
+                    <!--<li><a href="">Trousers</a></li>-->
+                    <!--<li><a href="">Jeans</a></li>-->
+                    <!--<li><a href="">Accessories</a></li>-->
+                    <!--<li><a href="">Shoes</a></li>-->
+                    <!--<li><a href="">Suits</a></li>-->
+                    <!--<li><a href="">Designer Cloths</a></li>-->
+                <!--</ul>-->
+            </a>
+            </li>
+            <li><a href="sale.html"class="link padding">Sale</a></li>
+            <li><a href="football.html"class="link padding">Football</a></li>
+            <li><a href="running.html"class="link padding">Running</a></li>
+            <li><a href="basketball.html"class="link padding">Baskeball</a></li>
+        </ul>
+    </nav>
+</header>
+    <section>
+        <div class="leftSection"><img src="images/banner1.jpg"></div>
+        <div class="rightSection">
+            <h1>Classic</h1>
+            <h3>White</h3>
+            <a href="shopNow.html"class="link padding shopNow" >Shop Now</a>
+        </div>
+        <div class="clear"></div>
+
+
+        <div class="gallery ">
+            <div class="galleryImg gridInGallery">
+                <h3 class="imageHeader">Lorem ipsum dolor sit amet</h3>
+
+                <img src="images/pic1.jpg" >
+                <h3 class="imageHeader price">£50</h3>
+                <h5 class="addToBag"><a href="bag.html" class=" link ">+Add to Bag</a></h5>
+                    <div class=" mask ">
+                        <a href="quickView" class="quickViewLink link">Quick View</a>
+                    </div>
+
+            </div>
+            <div class="galleryImg ">
+                <h3 class="imageHeader">Lorem ipsum dolor sit amet</h3>
+                <img src="images/pic2.jpg" >
+                <h3 class="imageHeader price">£50</h3>
+                <h5 class="addToBag"><a href="bag.html" class=" link ">+Add to Bag</a></h5>
+                     <div class=" mask ">
+                         <a href="quickView" class="quickViewLink link">Quick View</a>
+                     </div>
+            </div>
+            <div class="galleryImg ">
+                <h3 class="imageHeader">Lorem ipsum dolor sit amet</h3>
+                <img src="images/pic3.jpg">
+                <h3 class="imageHeader price">£50</h3>
+                <h5 class="addToBag"><a href="bag.html" class=" link ">+Add to Bag</a></h5>
+                    <div class=" mask ">
+                        <a href="quickView" class="quickViewLink link">Quick View</a>
+                     </div>
+            </div>
+            <div class="galleryImg ">
+                <h3 class="imageHeader">Lorem ipsum dolor sit amet</h3>
+                <img src="images/pic4.jpg">
+                <h3 class="imageHeader price">£50</h3>
+                <h5 class="addToBag"><a href="bag.html" class=" link ">+Add to Bag</a></h5>
+                <div class=" mask ">
+                    <a href="quickView" class="quickViewLink link">Quick View</a>
+                </div>
+            </div>
+            <div class="galleryImg  ">
+                <h3 class="imageHeader">Lorem ipsum dolor sit amet</h3>
+            <img src="images/pic5.jpg">
+                <h3 class="imageHeader price">£50</h3>
+                <h5 class="addToBag"><a href="bag.html" class=" link ">+Add to Bag</a></h5>
+                <div class=" mask ">
+                    <a href="quickView" class="quickViewLink link">Quick View</a>
+                </div>
+            </div>
+            <div class="galleryImg ">
+                <h3 class="imageHeader">Lorem ipsum dolor sit amet</h3>
+            <img src="images/pic6.jpg">
+                <h3 class="imageHeader price">£50</h3>
+                <h5 class="addToBag"><a href="bag.html" class=" link ">+Add to Bag</a></h5>
+                <div class=" mask ">
+                    <a href="quickView" class="quickViewLink link">Quick View</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="clear"></div>
+</div>
+</body>
+<footer>
+  Copyright@adidas.com
+</footer>
+</html>

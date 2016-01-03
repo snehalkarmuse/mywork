@@ -1,0 +1,44 @@
+.pop-up{
+    position: absolute;
+    left:10%;
+    top:60%;
+    width:60%;
+    height:56%;
+    margin-left: 10%;
+    background-color: lightgoldenrodyellow;
+    /*z-index: -10;*/
+    border:1px solid grey;
+
+}
+.image-deco{
+    float:left;
+    width:35%;
+    height:auto;
+    margin: 5% 2% 2% 5%;
+    border:1px solid grey;
+
+}
+.close{
+
+    float:right;
+    top:0;
+    /*margin-left:20%;*/
+    margin-right:0;
+
+}
+
+.pop-up p{
+    float:left;
+    margin:0 10% 0 10%
+
+}
+.price{
+    float:left;
+    margin-bottom: 10%;
+    font-weight: bolder;
+}
+.add-to-bag{
+    float:right;
+    margin:0 3% 5% 0;
+
+}

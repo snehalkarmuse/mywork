@@ -1,0 +1,17 @@
+.pop-up-basket{
+    position: absolute;
+    left:10%;
+    top:60%;
+    width:60%;
+    height:56%;
+    margin-left: 10%;
+    background-color: lightgray;
+    /*z-index: -10;*/
+    border:1px solid grey;
+
+}
+.img-size{
+    width:20%;
+    height:30%;
+    margin:2% 3% 2% 3%;
+}

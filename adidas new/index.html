@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <title>Adidas Home Page</title>
+
+
+
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/pop_up.css">
+    <link rel="stylesheet" href="css/basket.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/pop_up.js"></script>
+    <script src="js/basket.js"></script>
+
+    <script>
+
+
+
+    $(document).ready(function() {
+
+            $(".mainMenu > li").hover(function () {
+                        //effect when the user hovers over the menu
+                        //first hide the menu item, since the CSS displays it - then slide it down.
+                        $(this).children("ul").fadeIn();
+
+                    },
+                    function () {
+                        //effect when the user leaves the current menu area - fade out
+                        $(this).children("ul").fadeOut();
+
+                    });
+        });
+
+    </script>
+
+
+</head>
+
+<!--<div class="wrapper">-->
+    <div class="pop-up">
+        <div class="image-deco"><img src="images/pic1.jpg"></div>
+        <!--<div class="clear"></div>-->
+        <div class="close">
+            <a href="" >Close</a></div>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+            laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorp Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorp </p>
+            <p> Price:<h3 class="price">£50</h3></p>
+            <div class="add-to-bag" >
+                 <a href="" class="addToBag link linkColor" id="addBag">Add To Bag</a>
+            </div>
+        </div>
+
+    <!--<div class="pop-up-basket">-->
+        <!--<div class="close">-->
+            <!--<a href="" >Close</a></div>-->
+            <!--<ul class="display-basket"></ul>-->
+
+    <!--</div>-->
+
+
+<header>
+    <img class="logo margin" src="images/logo.png">
+    <ul class="headerMenu">
+        <li><a href="" class="link">sign up&save</a></li>
+        <li><a href="" class="link">store locator</a></li>
+        <li><a href="" class="link">my account</a></li>
+        <!--<li><h3 class="basket-deco">0</h3> <a href="" class="link bag" id="basket">Basket</a></li>-->
+        <li> <a href="" class="link bag">Basket</a></li>
+        <li><a href="" class="link">check out</a></li>
+    </ul>
+
+    <div class="clear"></div>
+    <nav>
+        <ul class="mainMenu margin">
+            <li class="color1"><a href="home.html" class=" linkColor link ">Home</a></li>
+            <li class="color2"><a href="men.html" class="link linkColor">Men
+                <ul class="subMenu">
+                    <li><a href="" class="link">Coats &Jackets</a></li>
+                    <li><a href="" class="link">Shirts</a></li>
+                    <li><a href="" class="link">T Shirts and Polo</a></li>
+                    <li><a href="" class="link">Trousers</a></li>
+                    <li><a href="" class="link">Jeans</a></li>
+                    <li><a href="" class="link">Accessories</a></li>
+                    <li><a href="" class="link">Shoes</a></li>
+                    <li><a href="" class="link">Suits</a></li>
+                    <li><a href="" class="link">Designer Cloths</a></li>
+                </ul>
+            </a>
+            </li>
+            <li class="color3"><a href="women.html"class="link linkColor">Women
+                <ul class="subMenu ">
+                    <li><a href="" class="link">Coats &Jackets</a></li>
+                    <li><a href="" class="link">Shirts</a></li>
+                    <li><a href="" class="link">T Shirts and Polo</a></li>
+                    <li><a href="" class="link">Trousers</a></li>
+                    <li><a href="" class="link">Jeans</a></li>
+                    <li><a href="" class="link">Accessories</a></li>
+                    <li><a href="" class="link">Shoes</a></li>
+                    <li><a href="" class="link">Suits</a></li>
+                    <li><a href="" class="link">Designer Cloths</a></li>
+                </ul>
+            </a>
+            </li>
+            <li class="color4"><a href="kids.html"class="link linkColor">Kids
+                <ul class="subMenu">
+                    <li><a href="" class="link">Coats &Jackets</a></li>
+                    <li><a href="" class="link">Shirts</a></li>
+                    <li><a href="" class="link">T Shirts and Polo</a></li>
+                    <li><a href="" class="link">Trousers</a></li>
+                    <li><a href="" class="link">Jeans</a></li>
+                    <li><a href="" class="link">Accessories</a></li>
+                    <li><a href="" class="link">Shoes</a></li>
+                    <li><a href="" class="link">Suits</a></li>
+                    <li><a href="" class="link">Designer Cloths</a></li>
+                </ul>
+            </a>
+            </li>
+            <li class="color1"><a href="" class="link linkColor ">Sale</a></li>
+            <li class="color2"><a href="" class="link linkColor">Football</a></li>
+            <li class="color3"><a href="" class="link linkColor ">Running</a></li>
+            <li class="color4"><a href="" class="link linkColor">Basketball</a></li>
+
+        </ul>
+    </nav>
+</header>
+<div class="clear"></div>
+<body>
+<div class="wrapper">
+<div class="header"></div>
+    <div class="topBox">
+        <div class="topBox-alpha">
+
+
+        <div id="mygallery" class="stepcarousel">
+            <div id="left_scroll"><a href='javascript:slide("left");'>
+                <p class="carousel-arrow left-arrow"><</p></a>
+            </div>
+            <div class="belt">
+                <div class="panel">
+                    <ul id="carousel_ul" >
+                        <li id="1"><img  src="images/pic1.jpg" ></li>
+                        <li id="2"><img src="images/pic2.jpg" ></li>
+                        <li id="3"><img src="images/pic3.jpg" ></li>
+                        <li id="4"><img  src="images/pic4.jpg" ></li>
+                    </ul>
+                </div>
+            </div>
+            <!--<input type='hidden' id='hidden_auto_slide_seconds' value=0 />-->
+        </div>
+
+
+        </div>
+        <div class="topBox-beta">
+            <h1 class="betaHeader1">Classic</h1>
+            <h3 class="betaHeader3">White</h3>
+            <a href="shopNow.html"class="link padding shopNow" >Shop Now</a>
+            <div class="control-carousel">
+                <ul id="controls">
+                    <li><a href="#1" data-target="1">1</a></li>
+                    <li><a href="#2" data-target="2">2</a></li>
+                    <li><a href="#3" data-target="3">3</a></li>
+                    <li><a href="#4" data-target="4">4</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="right_scroll"><a href='javascript:slide("right");'>
+        <p class="carousel-arrow right-arrow"> > </p></a>
+        </div>
+    <!--<div class="clear"></div>-->
+
+
+    </div>
+
+
+
+    <div class="clear"></div>
+
+
+
+    <div class="middleBox">
+        <div class="middle-alpha">
+        <p class="imageHeader">Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="middle-beta">
+            <ul class="middle-ul">
+
+                <li>
+                    <div class="facebook">
+                        <a href="">
+                            <img src="images/facebook.png">
+                        </a>
+                    </div>
+                     <div class="border-num">
+                         <p class="num">15.1k</p>
+                     </div>
+                    <!--<div class="radius">-->
+                        <!--<img src="./images/radius.png">-->
+                    <!--</div>-->
+
+                </li>
+                <li>
+                    <div class="twitter">
+                        <a href="">
+                            <img src="images/twitter.png">
+                        </a>
+                    </div>
+                    <div class="border-num">
+                        <p class="num">15.1k</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="google">
+                        <a href="">
+                            <img src="images/google-plus.png">
+                        </a>
+                    </div>
+                    <div class="border-num">
+                        <p class="num">15.1k</p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="bottomBox">
+        <div class="gallery">
+            <div class="gallery ">
+                <div class="galleryImg gridInGallery" id="pic1">
+                    <h3 class="imageHeader">Lorem ipsum dolor sit amet</h3>
+
+                    <img src="images/pic1.jpg" >
+                    <h3 class="imageHeader price">£50</h3>
+                    <h5 class=""><a href="" class=" link linkColor ">Add to Bag</a></h5>
+                    <div class=" mask " data-product="1">
+                        <a href="quickView" class="quickViewLink link linkColor" id="one">Quick View</a>
+                    </div>
+
+                </div>
+                <div class="galleryImg " id="pic2">
+                    <h3 class="imageHeader">Lorem ipsum dolor sit amet</h3>
+                    <img src="images/pic2.jpg" >
+                    <h3 class="imageHeader price">£50</h3>
+                    <h5 class=""><a href="" class=" link linkColor  ">Add to Bag</a></h5>
+                    <div class=" mask "data-product="2">
+                        <a href="quickView" class="quickViewLink link linkColor" id="two">Quick View</a>
+                    </div>
+                </div>
+                <div class="galleryImg " id="pic3">
+                    <h3 class="imageHeader">Lorem ipsum dolor sit amet</h3>
+                    <img src="images/pic3.jpg">
+                    <h3 class="imageHeader price">£50</h3>
+                    <h5 class=""><a href="" class=" link linkColor  ">Add to Bag</a></h5>
+                    <div class=" mask" data-product="3">
+                        <a href="quickView" class="quickViewLink link linkColor" id="three">Quick View</a>
+                    </div>
+                </div>
+                <div class="galleryImg " id="pic4">
+                    <h3 class="imageHeader">Lorem ipsum dolor sit amet</h3>
+                    <img src="images/pic4.jpg">
+                    <h3 class="imageHeader price">£50</h3>
+                    <h5 class=""><a href="" class=" link linkColor ">Add to Bag</a></h5>
+                    <div class="mask" data-product="4">
+                        <a href="quickView" class="quickViewLink link linkColor" id="four">Quick View</a>
+                    </div>
+                </div>
+                <div class="galleryImg  " id="pic5">
+                    <h3 class="imageHeader">Lorem ipsum dolor sit amet</h3>
+                    <img src="images/pic5.jpg">
+                    <h3 class="imageHeader price">£50</h3>
+                    <h5 class=""><a href="" class=" link linkColor ">Add to Bag</a></h5>
+                    <div class=" mask "data-product="5">
+                        <a href="quickView" class="quickViewLink link linkColor " id="five">Quick View</a>
+                    </div>
+                </div>
+                <div class="galleryImg " id="pic6">
+                    <h3 class="imageHeader">Lorem ipsum dolor sit amet</h3>
+                    <img src="images/pic6.jpg">
+                    <h3 class="imageHeader price">£50</h3>
+                    <h5 class=""><a href="" class=" link linkColor ">Add to Bag</a></h5>
+                    <div class=" mask" data-product="6">
+                        <a href="quickView" class="quickViewLink link linkColor" id="six">Quick View</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+        </div>
+    <div class="clear"></div></div>
+    </body>
+
+       <div class="footer">
+           <div class="footerBackground footerFontSize">
+               <ul class="mainMenu">
+                   <li class="linkColor">
+                       <!--<img src="f_icon.png">-->
+                       Free delivery on all over £100.
+                   </li>
+                   <li class="linkColor">
+                       <!--<img src="f_icon1.png">-->
+                       Customer Services:597595737525
+                   </li>
+                   <li class="linkColor">
+                       <!--<img src="f_icon2.png">-->
+                       Fast delivary and free return.
+                   </li>
+               </ul>
+           </div>
+           <div class="footerGreyBackground  footerFontSize ">
+               <a href="signUp.html" class="link linkColor">Sign up for email to get 15%</a>
+           </div>
+           <div class="col-1">
+               <h3>SPORTS</h3>
+               <ul>
+                   <li><a href="shop.html">Basketball</a></li>
+                   <li><a href="shop.html">Football</a></li>
+                   <li><a href="shop.html">Football Boots</a></li>
+                   <li><a href="shop.html">Predator</a></li>
+                   <li><a href="shop.html">F50</a></li>
+                   <li><a href="shop.html">Football Clothing</a></li>
+                   <li><a href="shop.html">Golf</a></li>
+                   <li><a href="shop.html">Golf Shoes</a></li>
+                   <li><a href="shop.html">Golf Clothing</a></li>
+                   <li><a href="shop.html">Outdoor</a></li>
+                   <li><a href="shop.html">Outdoor Shoes</a></li>
+                   <li><a href="shop.html">Outdoor Clothing</a></li>
+                   <li><a href="shop.html">Rugby</a></li>
+                   <li><a href="shop.html">Running</a></li>
+                   <li><a href="shop.html">Running Shoes</a></li>
+                   <li><a href="shop.html">Boost</a></li>
+                   <li><a href="shop.html">Supernova</a></li>
+                   <li><a href="shop.html">Running Clothing</a></li>
+                   <li><a href="shop.html">Swimming</a></li>
+                   <li><a href="shop.html">Tennis</a></li>
+                   <li><a href="shop.html">Tennis Shoes</a></li>
+                   <li><a href="shop.html">Tennis Clothing</a></li>
+                   <li><a href="shop.html">Training</a></li>
+                   <li><a href="shop.html">Training Shoes</a></li>
+                   <li><a href="shop.html">Training Clothing</a></li>
+                   <li><a href="shop.html">Training Accessories</a></li>
+                   <li><a href="shop.html">miCoach</a></li>
+                   <li><a href="shop.html">All Sports</a></li>
+               </ul>
+           </div>
+           <div class="col-1">
+               <h3>ORIGINALS</h3>
+               <ul>
+                   <li><a href="shop.html">Originals Shoes</a></li>
+                   <li><a href="shop.html">Gazelle</a></li>
+                   <li><a href="shop.html">Samba</a></li>
+                   <li><a href="shop.html">LA Trainer</a></li>
+                   <li><a href="shop.html">Superstar</a></li>
+                   <li><a href="shop.html">SL</a></li>
+                   <li><a href="shop.html">ZX</a></li>
+                   <li><a href="shop.html">Campus</a></li>
+                   <li><a href="shop.html">Spezial</a></li>
+                   <li><a href="shop.html">Dragon</a></li>
+                   <li><a href="shop.html">Originals Clothing</a></li>
+                   <li><a href="shop.html">Firebird</a></li>
+                   <li><a href="shop.html">Originals Accessories</a></li>
+                   <li><a href="shop.html">Men's Originals</a></li>
+                   <li><a href="shop.html">Women's Originals</a></li>
+                   <li><a href="shop.html">Kid's Originals</a></li>
+                   <li><a href="shop.html">All Originals</a></li>
+               </ul>
+           </div>
+
+           <div class="col-1">
+               <h3>PRODUCT TYPES</h3>
+               <ul>
+                   <li><a href="shop.html">Shirts</a></li>
+                   <li><a href="shop.html">Pants &amp; Tights</a></li>
+                   <li><a href="shop.html">Shirts</a></li>
+                   <li><a href="shop.html">Jerseys</a></li>
+                   <li><a href="shop.html">Hoodies &amp; Track Tops</a></li>
+                   <li><a href="shop.html">Bags</a></li>
+                   <li><a href="shop.html">Jackets</a></li>
+                   <li><a href="shop.html">Hi Tops</a></li>
+                   <li><a href="shop.html">SweatShirts</a></li>
+                   <li><a href="shop.html">Socks</a></li>
+                   <li><a href="shop.html">Swimwear</a></li>
+                   <li><a href="shop.html">Tracksuits</a></li>
+                   <li><a href="shop.html">Hats</a></li>
+                   <li><a href="shop.html">Football Boots</a></li>
+                   <li><a href="shop.html">Other Accessories</a></li>
+                   <li><a href="shop.html">Sandals &amp; Flip Flops</a></li>
+                   <li><a href="shop.html">Skirts &amp; Dresseses</a></li>
+                   <li><a href="shop.html">Balls</a></li>
+                   <li><a href="shop.html">Watches</a></li>
+                   <li><a href="shop.html">Fitness Equipment</a></li>
+                   <li><a href="shop.html">Eyewear</a></li>
+                   <li><a href="shop.html">Gloves</a></li>
+                   <li><a href="shop.html">Sports Bras</a></li>
+                   <li><a href="shop.html">Scarves</a></li>
+                   <li><a href="shop.html">Shinguards</a></li>
+                   <li><a href="shop.html">Underwear</a></li>
+               </ul>
+           </div>
+           <div class="col-1">
+               <h3>SUPPORT</h3>
+               <ul >
+                   <li><a href="shop.html">Store finder</a></li>
+                   <li><a href="shop.html">Customer Service</a></li>
+                   <li><a href="shop.html">FAQ</a></li>
+                   <li><a href="shop.html">Online Shop Contact Us</a></li>
+                   <li><a href="shop.html">about adidas Products</a></li>
+                   <li><a href="shop.html">Size Charts </a></li>
+                   <li><a href="shop.html">Ordering </a></li>
+                   <li><a href="shop.html">Payment </a></li>
+                   <li><a href="shop.html">Shipping </a></li>
+                   <li><a href="shop.html">Returning</a></li>
+                   <li><a href="shop.html">Using out Site</a></li>
+                   <li><a href="shop.html">Delivery Terms</a></li>
+                   <li><a href="shop.html">Site Map</a></li>
+                   <li><a href="shop.html">Gift Card</a></li>
+
+               </ul>
+
+           </div>
+
+</div>
+</html>

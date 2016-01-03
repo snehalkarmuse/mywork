@@ -1,0 +1,476 @@
+.wrapper{
+    /*margin:0 auto;*/
+    width:100%;
+}
+.margin{
+    margin:10px 0 0 40px;
+}
+.link{
+    text-decoration: none;
+    /*color:darkslategray;*/
+}
+.linkColor{
+    color:white;
+}
+.background{
+    background-color: orange;
+}
+.link:hover{
+    background-color: orange;
+
+}
+.logo{
+    float:left;
+    width:250px;
+    height:80px;
+}
+.headerMenu{
+    float: right;
+    margin:70px  50px 0 40px;
+
+    list-style: none;
+}
+.headerMenu li{
+    display: inline-block;
+    padding-left: 40px;
+    text-transform: uppercase;
+    font-size: .6em;
+
+}
+.headerMenu li a:hover{
+    color:darkslategrey;
+    background-color:#ffffff;
+}
+.basket-deco{
+    border-radius: 10px;
+    background-color: darkslategrey;
+    color:white;
+    width:35%;
+    margin-left:5%;
+    text-align: center;
+}
+nav{
+    background-color: black;
+    height:30px;
+}
+.mainMenu{
+    list-style: none;
+    position:relative;
+}
+.mainMenu li{
+    display: inline-block;
+    margin: 0 30px 0 0;
+    padding:5px 0 0 0;
+   }
+.mainMenu li a{
+    padding:5px;
+}
+.color1 a:hover{
+    background-color: red;
+
+}
+.color2 a:hover{
+    background-color: green;
+}
+.color3 a:hover{
+    background-color: blue;
+}
+.color4 a:hover{
+    background-color:#ff00ff;
+}
+.subMenu{
+    display: none;
+    position: absolute;
+    height:auto;
+    width:60%;
+    z-index: 4;
+    border: 1px solid grey;
+    border-top: none;
+    box-shadow: 10px 5px 3px grey;
+    background-color: white;
+    margin:10px 0 0 0 ;
+
+}
+.subMenu li{
+    display: block;
+    color: darkslategrey;
+}
+.subMenu li:hover{
+    display: block;
+}
+.subMenu li a{
+    color:darkslategrey;
+}
+
+/*main top box*/
+.topBox{
+margin-top:10px;
+    margin-left:40px;
+}
+
+.topBox-alpha{
+    float:left;
+    width:60%;
+}
+/*.topBox-alpha img{*/
+    /*width:100%*/
+    /*height:%;*/
+    /*padding:0 0 0 80px;*/
+/*}*/
+.topBox-beta{
+
+    float:left;
+    width:20%;
+    /*padding-right: 70px;*/
+    /*z-index:5;*/
+}
+
+.betaHeader1{
+    font-size: 40px;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+.betaHeader3{
+    font-size: 25px;
+    margin-left:20px;
+    margin-bottom:20px;
+}
+.shopNow{
+    margin-left:24px;
+    margin-top:50px;
+    padding:5px;
+    color:black;
+    border:1px solid lightgrey;
+}
+
+/*carasoul*/
+
+
+
+
+.stepcarousel{
+    position: relative; /*leave this value alone*/
+    /*border: 1px solid black;*/
+    overflow: hidden;/*leave this value alone*/
+    /*width: 270px; *//*Width of Carousel Viewer itself*/
+    width:100%;
+    height:300px;
+//*Height should enough to fit largest content's height*/
+    /*margin-top:20px;*/
+
+}
+
+.stepcarousel .belt{
+    position: absolute; /*leave this value alone*/
+    left: 0;
+    top: 0;
+
+}
+
+.stepcarousel .panel{
+    float: left; /*leave this value alone*/
+    /*overflow: hidden;  *//* clip content that go outside dimensions of holding panel DIV*/
+    /*margin: 10px; *//*margin around each panel*/
+    /*margin-right:10px;*/
+    width: 100%; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+    /*width:100%;*/
+    height:348px;
+}
+.panel img{
+    width:100%;
+    /*height:100%;*/
+
+}
+#carousel_ul {
+    /*position:relative;*/
+    left:0px; /* important (this should be negative number of list items width(including margin) */
+    list-style-type: none;  /*removing the default styling for unordered list items*/
+    margin: 0px;
+    /*padding: 50px 0 10px 0;*/
+    width:100%;  /*important*/
+    /* non-important styling bellow */
+    /*padding-bottom:10px;*/
+}
+
+#carousel_ul li{
+
+    display:inline-block;
+    width:60%;
+    padding-left:50px;
+ }
+.carousel-arrow {
+    background-color: white;
+    border-radius: 15px;
+    /*border:1px solid white;*/
+    position: absolute;
+    cursor: pointer;
+    opacity: 1;
+    top: 140px;
+    color: black;
+    font-weight: bolder;
+    font-size: 3em;
+}
+.left-arrow{
+    left:0px;
+}
+.right-arrow{
+    right:30px;
+    top:230px;
+}
+.control-carousel{
+       margin-top: 10px;
+}
+#controls ul{
+    /*display:inline-block;*/
+    /*left:50%;*/
+    /*margin-left:40%;*/
+    /*margin-top:20%;*/
+    list-style-type: disc;
+}
+#controls li{
+    display:inline-block;
+    padding:0 10px 0 3px;
+   font-weight: bolder;
+
+}
+#controls a{
+    text-decoration: none;
+}
+#controls li a:visited{
+    color: black;
+}
+#controls li a:hover{
+    color: red;
+    cursor:pointer;
+    font-weight:600;
+
+}
+/*middle box*/
+
+.middleBox{
+    width:100%;
+    float:left;
+    margin: 0 auto;
+}
+.middle-alpha {
+    width: 20%;
+    float:left;
+    /*top:30px;*/
+    padding-left: 30px;
+    margin:15px 0 0 0;
+}
+.middle-beta{
+    /*position: relative;*/
+    width:70%;
+    float:left;
+}
+.middle-ul{
+    position: relative;
+    list-style-type: none;
+    /*width:60%;*/
+    margin: 0 0  0 20%;
+
+}
+.middle-ul li{
+    position: relative;
+    display:inline-block;
+    margin-top: 0;
+    padding-right:10px;
+    width:22.5%;
+}
+.middle-ul li img{
+    width:50px;
+    height:50px;
+
+    border-radius: 25px;
+    border-right:3px solid black; ;
+}
+/*.radius{*/
+    /*position:absolute;*/
+    /*top:1px;*/
+    /*left:18px;*/
+
+/*}*/
+/*.radius img{*/
+    /*width:50%;*/
+    /*height:10px;*/
+/*}*/
+.border-num{
+    position: absolute;
+    left:60px;
+    top:10px;
+    border-bottom:2px solid grey;
+    width:45%;
+}
+.num{
+    color:grey;
+    text-align: center;
+    font-size: 10px;
+}
+.facebook a:hover{
+    background-image: url("../images/facebook-hover.png");
+
+}
+.twitter a:hover{
+    background-image: url("../images/twitter-hover.png");
+}
+.google a:hover{
+    background-image: url("../images/google-plus-hover.gif");
+
+}
+/*bottom box*/
+.bottom-box{
+
+}
+.gallery{
+    float:left;
+    margin-top: 10px;
+}
+.galleryImg {
+    border: 1px solid grey;
+    width: 300px;
+    margin-left: 30px;
+    display: inline-block;
+    margin-bottom: 10px;
+    height: 230px;
+}
+.gallery img{
+    height:150px;
+    width: 160px;
+    padding-left: 65px;
+    padding-top:0;
+    margin:0;
+}
+.gallery img:hover {
+    -webkit-transform:scale(.5);
+    -moz-transform:scale(.5);
+    -o-transform:scale(.5);
+    transform:scale(.5);
+    -webkit-transition:transform ease-in-out 1s;
+    -moz-transition:transform ease-in-out 1s;
+    -o-transition:transform ease-in-out 1s;
+    transition:transform ease-in-out 1s;
+    opacity:.5;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes slideIn
+{
+
+    0%   {background:red; left:-100px; top:-100px;}
+    100%  {background:yellow; left:50px; top:-100px;}
+
+}
+
+/* Standard syntax */
+@keyframes slideIn
+{
+    0%   {background:red; left:-100px; top:-100px;}
+   100% {background:yellow; left:50px; top:-100px;}
+
+
+}
+
+.mask{
+    width:98px;
+    padding:3px 0 0 0;
+    -webkit-transform-origin: left;
+    -webkit-transform: translate(50%, 50%);
+    position: relative;
+    overflow: hidden;
+    top: -100px;
+    left: 50px;
+    opacity:0;
+}
+
+.galleryImg:hover .mask{
+    -webkit-animation:slideIn 1s;
+    animation:slideIn 1s;
+    z-index:1;
+    opacity:1;
+    -webkit-animation-fill-mode:forward;
+}
+
+.quickViewLink{
+    background-color: #DF8203;
+    /*text-decoration: none;*/
+    text-align: center;
+    /*color: black;*/
+    padding:10px;
+
+}
+.imageHeader{
+    color:grey;
+    font-size:12px;
+    padding-top:3px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.price{
+    padding:0 0 0 10px;
+    font-size:14px;
+}
+.addToBag{
+    color:white;
+    background-color: black;
+    width:300px;
+    height:20px;
+    text-align: center;
+    padding-top:5px;
+    text-transform: uppercase;
+    /*margin-left:60px;*/
+    font-size: 10px;
+    margin-bottom: 0;
+    margin-top: 16px;
+}
+/*footer*/
+.footerFontSize{
+    font-size: .7em;
+}
+.footerBackground{
+    background-color: black;
+    height:20px;
+
+}
+.footerBackground li{
+
+    padding:5px 80px 0 90px;
+}
+.footerGreyBackground{
+    background-color: lightgrey;
+    height:27px;
+    padding: 8px 0 0 36%;
+    text-transform: uppercase;
+}
+.col-1 h4
+{
+    color:black;
+    margin-bottom:-10px;
+}
+.col-1 ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 2%;
+}
+.col-1 ul li{
+    display:list-item;
+    color:grey;
+}
+.col-1 ul li a{
+    text-decoration: none;
+    color:grey;
+}
+
+.col-1
+{
+    width:16%;
+    display: block;
+    float: left;
+    margin: 1% 0 1% 5%;
+
+}
+
+
+.clear{
+   clear:both;
+}
