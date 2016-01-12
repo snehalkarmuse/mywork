@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".dropdown").hover(function(){
+            var dropdownMenu = $(this).children(".dropdown-menu");
+            if(dropdownMenu.is(":visible")){
+                dropdownMenu.parent().toggleClass("open");
+            }
+        });
+    });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="row hidden-xs">
+            <div class="col-md-2 "><img src=""></div>
+            <div class="col-md-2"><a href="#"><h3 class="glyphicon glyphicon-search headerMenu">Search</h3></a></div>
+            <div class="col-md-2"><a href="#"><h3 class="headerMenu">Stores</h3></a></div>
+            <div class="col-md-2"><a href="#"><h3 class="headerMenu">Sign In</h3></a></div>
+            <div class="col-md-2"><a href="#"><h3 class="headerMenu">Your Bag</h3></a></div>
+            <div class="col-md-2"><a href="#"><h3 class="headerMenu">Check Out</h3></a></div>
+        </div>
+
+
+
+        <nav id="myNavbar" class="navbar navbar-default" role="navigation">
+
+        <div class="navbar-header">
+            <!--<ul class="topMenu">-->
+                <!--<li class="hidden-sm"><a href="#" class="glyphicon glyphicon-search headerMenu "></a></li>-->
+                <!--<li class="hidden-sm"><a href="#"><i class="icon-large icon-shopping-cart headerMenu "></i></a></li>-->
+                <!--<li></li>-->
+            <!--</ul>-->
+
+            <button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target="#navbarCollapse">
+
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!--<a class="navbar-brand" href="#"></a>-->
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav menu">
+                <li><a href="#"><h5 class="menuText">Sale</h5></a></li>
+                <li><a href="#"><h5 class="menuText">Inspire Me</h5></a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><h5 class="menuText">Women</h5></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Bags & Purse</a></li>
+                        <li><a href="#">Coats & Jackets</a></li>
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#">Jewellery</a></li>
+                        <li><a href="#">Jumpers & Cardigans</a></li>
+                        <li><a href="#">Shoes & Boots</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Trousers & Leggings</a></li>
+                        <li><a href="#">Work wear</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><h5 class="menuText">Lingerie</h5></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Bra</a></li>
+                        <li><a href="#">Knickers</a></li>
+                        <li><a href="#">Night Dresses</a></li>
+                        <li><a href="#">Socks & Tights</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><h5 class="menuText">Beauty</h5></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Beauty Gifts</a></li>
+                        <li><a href="#">Make up</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><h5 class="menuText">Men</h5></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Coats & Jackets</a></li>
+                        <li><a href="#">Dresses</a></li>
+                        <li><a href="#">Jumpers & Cardigans</a></li>
+                        <li><a href="#">Night Dresses</a></li>
+                        <li><a href="#">Shoes & Boots</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Trousers</a></li>
+                        <li><a href="#">Work wear</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><h5 class="menuText">Kids</h5></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Baby</a></li>
+                        <li><a href="#">Girls</a></li>
+                        <li><a href="#">Boys</a></li>
+                        <li><a href="#">Toys & Books</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><h5 class="menuText">Home & Furniture</h5></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Bathroom Furniture</a></li>
+                        <li><a href="#">Bedroom Furniture</a></li>
+                        <li><a href="#">Dinning Room Furniture</a></li>
+                        <li><a href="#">Sofas & ArmChair</a></li>
+                        <li><a href="#">Mattresses</a></li>
+                        <li><a href="#">Living Room Furniture</a></li>
+                        <li><a href="#">Office Furniture</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><h5 class="menuText">Food & Wine</h5></a></li>
+                <li><a href="#"><h5 class="menuText">Flowers & Gifts</h5></a></li>
+                <li><a href="#"><h5 class="menuText">Offers</h5></a></li>
+                <li><a href="#"><h5 class="menuText">M&S Bank</h5></a></li>
+            </ul>
+        </div>
+        </nav>
+
+
+
+
+            <!--<ul class="nav nav-pills menu">-->
+                <!--<li><a href="#"><h5 class="menuText">Sale</h5></a></li>-->
+                <!--<li><a href="#"><h5 class="menuText">Inspire Me</h5></a></li>-->
+                <!--<li class="dropdown">-->
+                    <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#"><h5 class="menuText">Women</h5></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="#">Accessories</a></li>-->
+                        <!--<li><a href="#">Bags & Purse</a></li>-->
+                        <!--<li><a href="#">Coats & Jackets</a></li>-->
+                        <!--<li><a href="#">Dresses</a></li>-->
+                        <!--<li><a href="#">Jewellery</a></li>-->
+                        <!--<li><a href="#">Jumpers & Cardigans</a></li>-->
+                        <!--<li><a href="#">Shoes & Boots</a></li>-->
+                        <!--<li><a href="#">Shirts</a></li>-->
+                        <!--<li><a href="#">T-Shirts</a></li>-->
+                        <!--<li><a href="#">Trousers & Leggings</a></li>-->
+                        <!--<li><a href="#">Work wear</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+
+                <!--<li class="dropdown">-->
+                    <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#"><h5 class="menuText">Lingerie</h5></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="#">Bra</a></li>-->
+                        <!--<li><a href="#">Knickers</a></li>-->
+                        <!--<li><a href="#">Night Dresses</a></li>-->
+                        <!--<li><a href="#">Socks & Tights</a></li>-->
+                     <!--</ul>-->
+                <!--</li>-->
+
+                <!--<li class="dropdown">-->
+                    <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#"><h5 class="menuText">Beauty</h5></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="#">Beauty Gifts</a></li>-->
+                        <!--<li><a href="#">Make up</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+
+                <!--<li class="dropdown">-->
+                    <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#"><h5 class="menuText">Men</h5></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="#">Accessories</a></li>-->
+                        <!--<li><a href="#">Coats & Jackets</a></li>-->
+                        <!--<li><a href="#">Dresses</a></li>-->
+                        <!--<li><a href="#">Jumpers & Cardigans</a></li>-->
+                        <!--<li><a href="#">Night Dresses</a></li>-->
+                        <!--<li><a href="#">Shoes & Boots</a></li>-->
+                        <!--<li><a href="#">Shirts</a></li>-->
+                        <!--<li><a href="#">T-Shirts</a></li>-->
+                        <!--<li><a href="#">Trousers</a></li>-->
+                        <!--<li><a href="#">Work wear</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+
+                <!--<li class="dropdown">-->
+                    <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#"><h5 class="menuText">Kids</h5></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="#">Baby</a></li>-->
+                        <!--<li><a href="#">Girls</a></li>-->
+                        <!--<li><a href="#">Boys</a></li>-->
+                        <!--<li><a href="#">Toys & Books</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+
+                <!--<li class="dropdown">-->
+                    <!--<a class="dropdown-toggle" data-toggle="dropdown" href="#"><h5 class="menuText">Home & Furniture</h5></a>-->
+                    <!--<ul class="dropdown-menu">-->
+                        <!--<li><a href="#">Bathroom Furniture</a></li>-->
+                        <!--<li><a href="#">Bedroom Furniture</a></li>-->
+                        <!--<li><a href="#">Dinning Room Furniture</a></li>-->
+                        <!--<li><a href="#">Sofas & ArmChair</a></li>-->
+                        <!--<li><a href="#">Mattresses</a></li>-->
+                        <!--<li><a href="#">Living Room Furniture</a></li>-->
+                        <!--<li><a href="#">Office Furniture</a></li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+                <!--<li><a href="#"><h5 class="menuText">Food & Wine</h5></a></li>-->
+                <!--<li><a href="#"><h5 class="menuText">Flowers & Gifts</h5></a></li>-->
+                <!--<li><a href="#"><h5 class="menuText">Offers</h5></a></li>-->
+                <!--<li><a href="#"><h5 class="menuText">M&S Bank</h5></a></li>-->
+            <!--</ul>-->
+
+
+
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-xs-12 col-md-10">
+                    <div class="carousel slide" id="myCarousel" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1" ></li>
+                            <li data-target="#myCarousel" data-slide-to="2" ></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="image/HP_Hero_1.jpg">
+                            </div>
+                            <div class="item">
+                                <img src="image/HP_Hero_2.jpg">
+                            </div>
+                            <div class="item">
+                                <img src="image/HP_Hero_3.jpg">
+                            </div>
+                        </div>
+
+
+                    <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a href="#myCarousel" class="carousel-control right" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                        <div class="col-md-1"></div>
+            </div>
+                <div class="row thumbnailPadding ">
+                    <a class=" col-xs-6 col-md-3" href="#"><img class="thumbnail" src="image/women.jpg"><span class="thumbnailText">Women</span></a>
+                    <a class=" col-xs-6 col-md-3" href="#"><img class="thumbnail" src="image/nightwear.jpg"><span class="thumbnailText">Nightwear</span></a>
+                    <a class=" col-xs-6 col-md-3" href="#"><img class="thumbnail" src="image/men.jpg"><span class="thumbnailText">Men</span></a>
+                    <a class=" col-xs-6 col-md-3" href="#"><img class="thumbnail" src="image/kids.jpg"><span class="thumbnailText">Kids</span></a>
+                </div>
+                <div class="row thumbnailPadding">
+                    <a class="col-xs-6 col-md-3" href="#"><img class="thumbnail" src="image/beauty1.jpg"><span class="thumbnailText">Beauty</span></a>
+                    <a class="col-xs-6 col-md-3" href="#"><img class="thumbnail" src="image/furniture.jpg"><span class="thumbnailText">Furniture</span></a>
+                    <a class="col-xs-6 col-md-3" href="#"><img class="thumbnail" src="image/food1.jpg"><span class="thumbnailText">Food</span></a>
+                    <a class="col-xs-6 col-md-3" href="#"><img class="thumbnail" src="image/flower.jpg"><span class="thumbnailText">Flower</span></a>
+                </div>
+        </div>
+
+    </div>
+    <div class="row backgroundColor hidden-xs">
+        <div class="col-xs-6 col-md-3 ">
+            <ul class="leftMenu">
+                <li class="leftMenuHeader">Women Sale</li>
+                <li><a href="#">All Women Sale</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Bags & Purse</a></li>
+                <li><a href="#">Coats & Jackets</a></li>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Jewellery</a></li>
+                <li><a href="#">Jumpers & Cardigans</a></li>
+                <li><a href="#">Shoes & Boots</a></li>
+                <li><a href="#">Shirts</a></li>
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Trousers & Leggings</a></li>
+                <li><a href="#">Work wear</a></li>
+            </ul>
+            </div>
+        <div class="col-xs-6 col-md-3 ">
+            <ul class="leftMenu">
+                <li class="leftMenuHeader">Lingerie & NightWear</li>
+                <li><a href="#">Bra</a></li>
+                <li><a href="#">Knickers</a></li>
+                <li><a href="#">Night Dresses</a></li>
+                <li><a href="#">Socks & Tights</a></li>
+
+                <li class="leftMenuHeader">Beauty</li>
+                <li><a href="#">Beauty Gifts</a></li>
+                <li><a href="#">Make up</a></li>
+
+                <li class="leftMenuHeader">Kids</li>
+                <li><a href="#">Baby</a></li>
+                <li><a href="#">Girls</a></li>
+                <li><a href="#">Boys</a></li>
+                <li><a href="#">Toys & Books</a></li>
+
+
+            </ul>
+        </div>
+        <div class="col-xs-6 col-md-3 ">
+            <ul class="leftMenu">
+                <li class="leftMenuHeader">Men</li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Coats & Jackets</a></li>
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Jumpers & Cardigans</a></li>
+                <li><a href="#">Night Dresses</a></li>
+                <li><a href="#">Shoes & Boots</a></li>
+                <li><a href="#">Shirts</a></li>
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Trousers</a></li>
+                <li><a href="#">Work wear</a></li>
+
+            </ul>
+            </div>
+
+            <div class="col-xs-6 col-md-3 ">
+             <ul class="leftMenu">
+                 <li class="leftMenuHeader">Home</li>
+                 <li><a href="#">Bedding</a></li>
+                 <li><a href="#">Cookerware & Dinning</a></li>
+                 <li><a href="#">Cushions & Throw</a></li>
+                 <li><a href="#">Home Accessories</a></li>
+                 <li><a href="#">Lighting</a></li>
+                 <li><a href="#">Towels & Bathroom Accessories</a></li>
+
+                <li class="leftMenuHeader">Furniture</li>
+                <li><a href="#">Bathroom Furniture</a></li>
+                <li><a href="#">Bedroom Furniture</a></li>
+                <li><a href="#">Dinning Room Furniture</a></li>
+                <li><a href="#">Sofas & ArmChair</a></li>
+                <li><a href="#">Mattresses</a></li>
+                <li><a href="#">Living Room Furniture</a></li>
+                <li><a href="#">Office Furniture</a></li>
+
+                <!--<li class="leftMenuHeader">Christmas Sale</li>-->
+                <!--<li><a href="#">Christmas Gift</a></li>-->
+                <!--<li><a href="#">Cards, Decorations & Wrap</a></li>-->
+
+            </ul>
+        </div>
+    </div>
+        <div class="row footer">
+
+        <div class="col-xs-12 col-md-12 footer-copyright">Copyright © XYZ Retail plc 2001 - 2015. All rights reserved</div>
+    </div>
+    </div>
+</body>
+</html>
