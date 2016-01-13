@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="menu.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+        <!--<script src="menu.js"/>-->
+
+    <script>
+        $(document).ready(function() {
+
+            $(".main-menu > li").hover(function () {
+                //effect when the user hovers over the menu
+                //first hide the menu item, since the CSS displays it - then slide it down.
+                $(this).children("ul").fadeIn();
+
+            },
+            function () {
+                //effect when the user leaves the current menu area - fade out
+                $(this).children("ul").fadeOut();
+
+            });
+        });
+    </script>
+
+</head>
+<body>
+<div>
+    <ul  class="main-menu">
+        <li>
+            <a href="">Home</a>
+        </li>
+        <li>
+            <a href="">Men</a>
+            <ul class="sub-menu">
+                <li><a href="">Coats &Jackets</a></li>
+                <li><a href="">Shirts</a></li>
+                <li><a href="">T Shirts and Polo</a></li>
+                <li><a href="">Trousers</a></li>
+                <li><a href="">Jeans</a></li>
+                <li><a href="">Accessories</a></li>
+                <li><a href="">Shoes</a></li>
+                <li><a href="">Suits</a></li>
+                <li><a href="">Designer Cloths</a></li>
+            </ul>
+        </li>
+        <li >
+            <a href="">Women</a>
+            <ul class="sub-menu">
+                <li><a href="">Coats &Jackets</a></li>
+                <li><a href="">Shirts</a></li>
+                <li><a href="">T Shirts and Polo</a></li>
+                <li><a href="">Trousers</a></li>
+                <li><a href="">Jeans</a></li>
+                <li><a href="">Accessories</a></li>
+                <li><a href="">Shoes</a></li>
+                <li><a href="">Suits</a></li>
+                <li><a href="">Designer Cloths</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">Kids</a>
+            <ul class="sub-menu">
+                <li><a href="">Coats &Jackets</a></li>
+                <li><a href="">Shirts</a></li>
+                <li><a href="">T Shirts and Polo</a></li>
+                <li><a href="">Trousers</a></li>
+                <li><a href="">Jeans</a></li>
+                <li><a href="">Accessories</a></li>
+                <li><a href="">Shoes</a></li>
+                <li><a href="">Suits</a></li>
+                <li><a href="">Designer Cloths</a></li>
+            </ul>
+        </li>
+    </ul>
+
+</div>
+
+</body>
+</html>
