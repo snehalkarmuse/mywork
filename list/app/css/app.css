@@ -1,0 +1,73 @@
+/* app css stylesheet */
+.container{
+    position:absolute;
+    width:80%;
+    height:60%;
+    left:10%;
+    top:50%;
+    margin-top:20%;
+}
+.header{
+    border-bottom:1px solid lightgrey;
+    padding-bottom: 5%;
+    color:darkslategrey;
+}
+.listHeader {
+    padding-left: 45%;
+}
+.close{
+   float:right;
+}
+.listClose{
+    padding-left:1%;
+}
+.inputBox{
+    border-top:1px solid lightgrey;
+
+    height:30px;
+    margin:50% 0 5% 0;
+    font:"Lucida Grande", "Trebuchet MS", sans-serif;
+}
+.deco{
+    margin-top:5%;
+
+    background-color:#f7f7f7;
+    border-radius: 5px;
+    color:#1f1f1f;
+    border: 2px solid lightgrey;
+    box-shadow: 1px  grey;
+    -webkit-box-shadow:1px grey;
+    -moz-box-shadow: 1px grey;
+}
+.textBox{
+    width:150px;
+    padding:2.5%;
+    margin:0 3% 0 0;
+}
+.button{
+
+    padding:2%;
+    font-size:1.2em;
+    width:130px;
+    margin-left: 5%;
+}
+ul{
+    list-style: none;
+    width:40%;
+}
+.textDeco{
+    color:darkslategrey;
+    font-size: 1.2em;
+}
+li{
+    float:left;
+    width:100%;
+    padding:0 15% 1% 0;
+    margin:0 0 0 3%;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}

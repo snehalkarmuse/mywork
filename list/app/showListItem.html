@@ -1,0 +1,24 @@
+
+<div ng-controller="showListItemController">
+    <div class="container">
+        <div>
+        <h4 class="header showItemHeader">{{listSelected.name}} :
+         <a href="#/allList" class="close"> x</a></h4>
+        </div>
+        <div class="showList row">
+            <!--<div class="col-xs-4"></div>-->
+            <!--<div class="col-xs-4">-->
+                <ul>
+                    <li ng-repeat="item in listSelected.items" class="textDeco">
+                   {{item}}<span ng-click="deleteItem(item)" class="close listClose"> x</span>
+                    </li>
+                </ul>
+            <!--</div>-->
+            <!--<div class="col-xs-4"></div>-->
+        </div>
+        <div class="inputBox">
+            <input type="text" class="textBox deco" ng-model="item">
+            <input type="button" class="button deco" value="Add Item" ng-click="addItem()">
+        </div>
+    </div>
+</div>

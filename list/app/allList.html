@@ -1,0 +1,20 @@
+
+    <div class="container" ng-controller="showListController">
+        <h4 class="header listHeader">All Lists</h4>
+        <div class="showList row">
+                <!--<div class="col-xs-6"></div>-->
+                <!--<div class="col-xs-6">-->
+                    <ul>
+                        <li ng-repeat="list in shoppingLists">
+                            <a class="textDeco" href="#/showListItem/{{list.name}}">{{list.name}}
+                                <a href="#/allList" class="close listClose"> x</a></a>
+                        </li>
+                    </ul>
+                <!--</div>-->
+                <!--<div class="col-xs-4"></div>-->
+        </div>
+        <div class="inputBox">
+        <input type="text" ng-model="shoppingListName" class="textBox deco">
+        <input type="button" class="button deco" value="Create List" ng-click="addList()">
+        </div>
+    </div>
