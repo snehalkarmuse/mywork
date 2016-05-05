@@ -7,7 +7,7 @@
                     <ul>
                         <li ng-repeat="list in shoppingLists">
                             <a class="textDeco" href="#/showListItem/{{list.name}}">{{list.name}}
-                                <a href="#/allList" class="close listClose"> x</a></a>
+                                <a href="#/allList" class="close listClose" ng-click="deleteList(list.name)"> x</a></a>
                         </li>
                     </ul>
                 <!--</div>-->

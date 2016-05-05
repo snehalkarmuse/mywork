@@ -34,6 +34,11 @@ myModule.controller("showListController",['$scope','$routeParams','shoppingListS
         shoppingListService.saveAllShoppingList($scope.shoppingLists);
 
     };
+    $scope.deleteList=function(list){
+        var a=$scope.shoppingLists.indexOf(list);
+        $scope.shoppingLists.splice(a,1);
+        shoppingListService.saveAllShoppingList($scope.shoppingLists);
+    }
 }]);
 
 myModule.controller("showListItemController", ['$scope','$routeParams', 'shoppingListService', function($scope,$routeParams,shoppingListService){
@@ -57,7 +62,8 @@ myModule.controller("showListItemController", ['$scope','$routeParams', 'shoppin
         var a=$scope.listSelected.items.indexOf(item);
         $scope.listSelected.items.splice(a,1);
         shoppingListService.saveShoppingList($scope.listSelected);
-    }
+    };
+
 
 }]);
 
